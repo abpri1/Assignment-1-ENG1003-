@@ -100,7 +100,7 @@ function translate (a)
 {
     if (prevColour === true)
         {
-            if (a >= 1 || a <= 2)
+            if (a >= 1 && a <= 2)
                 {
                     morseCode += dot
                     
@@ -117,14 +117,14 @@ function translate (a)
         }
     else
         {
-            if (a >= 1 || a <= 2)
+            if (a >= 1 && a <= 2)
                 {
                     morseCode += elementSpace
                     
                     timeUnitsTrue = 0
                     timeUnitsFalse = 0
                 }
-            else if (a >= 3 || a <= 6) 
+            else if (a >= 3 && a <= 6) 
                 {
                     morseCode += letterSpace
                     
